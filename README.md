@@ -1,5 +1,14 @@
 # Minimal BeamSense
 
+```
+    __  ____       _                 __   ____                      _____                    
+   /  |/  (_)___  (_)___ ___  ____ _/ /  / __ )___  ____ _____ ___ / ___/___  ____  ________ 
+  / /|_/ / / __ \/ / __ `__ \/ __ `/ /  / __  / _ \/ __ `/ __ `__ \\__ \/ _ \/ __ \/ ___/ _ \
+ / /  / / / / / / / / / / / / /_/ / /  / /_/ /  __/ /_/ / / / / / /__/ /  __/ / / (__  )  __/
+/_/  /_/_/_/ /_/_/_/ /_/ /_/\__,_/_/  /_____/\___/\__,_/_/ /_/ /_/____/\___/_/ /_/____/\___/ 
+                                                                                             
+```
+
 Minimal BeamSense is a lightweight Wi-Fi sensing prototype for coarse indoor state recognition using commodity 802.11ac hardware.  
 The project captures compressed beamforming feedback (CBF) / beamforming-feedback-angle-related information from normal AP--STA communication, converts it into fused BFA tensors, and uses a small CNN pipeline to classify simple environmental states.
 
@@ -15,19 +24,14 @@ The hardware setup uses one access point, three RT-AX52 bridge-style stations, a
 
 ![Inference timeline with 5 s majority voting](docs/images/prediction_timeline_5s.png)
 
-The final inference stage produces sample-level predictions and a 5 s majority-voting timeline for three coarse states:
-
-- `empty`
-- `one_person`
-- `two_person`
 
 project workflow:
-
-1. Start foreground `iperf3` traffic between the Windows endpoints and the Ubuntu receiver.
+1. Start foreground iperf3 traffic between the Windows endpoints and the Ubuntu receiver.
 2. Run the Ubuntu capture script to capture CBF-related frames, run QC, export per-peer CSV files, and push the session to Windows.
 3. Run the Windows session preparation and MATLAB-based BFA extraction pipeline.
-4. Build fused `10 x 234 x 12` tensors for training or inference.
+4. Build fused tensors for training or inference.
 5. Train/evaluate the Keras CNN model, or run blind inference and plot the prediction timeline.
+
 
 ## replace all placeholders with real values before launching
 
