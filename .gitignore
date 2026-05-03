@@ -1,0 +1,48 @@
+﻿# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+# MATLAB temporary files
+*.asv
+*.mex*
+*.slxc
+
+# Large or generated data
+*.pcap
+*.pcapng
+*.csi
+*.mat
+*.npy
+*.npz
+*.h5
+*.keras
+*.pth
+*.pt
+
+# Generated outputs
+inbox/
+sessions/
+state_training/
+inference_runs/
+reports/
+results/
+outputs/
+captures/
+logs/
+*.log
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Credentials / local configs
+*.auth
+*.cred
+credentials*
+secrets*
+local_config*

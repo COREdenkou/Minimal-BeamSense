@@ -1,0 +1,27 @@
+{
+  "version": "beamsense_v2",
+  "ap_bssid": "<AP_BSSID>",
+  "monitor_interface": "<MONITOR_IFACE>",
+  "default_capture_root": "<CAPTURE_ROOT>",
+  "win10_share_base_subdir": "<WINDOWS_REMOTE_BASE_SUBDIR>",
+  "peers": {
+    "rtax52_a": {
+      "mac": "<STA_A_MAC>",
+      "backend_name": "<WIN10_BACKEND_NAME>",
+      "backend_ip": "<WIN10_IP>",
+      "notes": "RT-AX52 peer A, backend Win10 endpoint"
+    },
+    "rtax52_b": {
+      "mac": "<STA_B_MAC>",
+      "backend_name": "<WIN11_BACKEND_NAME>",
+      "backend_ip": "<WIN11_IP>",
+      "notes": "RT-AX52 peer B, backend Win11 endpoint"
+    },
+    "rtax52_c": {
+      "mac": "<STA_C_MAC>",
+      "backend_name": "<UBUNTU_BACKEND_NAME>",
+      "backend_ip": "<UBUNTU_IP>",
+      "notes": "RT-AX52 peer C, backend Ubuntu endpoint"
+    }
+  }
+}
