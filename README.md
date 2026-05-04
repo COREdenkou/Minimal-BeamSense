@@ -8,6 +8,7 @@
 /_/  /_/_/_/ /_/_/_/ /_/ /_/\__,_/_/  /_____/\___/\__,_/_/ /_/ /_/____/\___/_/ /_/____/\___/ 
                                                                                              
 ```
+It's my final year project and have only been tested on my own environment. It's to be expected if you find something not working properly...
 
 Minimal BeamSense is a lightweight Wi-Fi sensing prototype for coarse indoor state recognition using commodity 802.11ac hardware.  
 The project captures compressed beamforming feedback (CBF) / beamforming-feedback-angle-related information from normal AP--STA communication, converts it into fused BFA tensors, and uses a small CNN pipeline to classify simple environmental states.
