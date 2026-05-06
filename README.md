@@ -17,13 +17,13 @@ The project captures compressed beamforming feedback (CBF) / beamforming-feedbac
 
 This repository contains the processing scripts used in the project. It does not include raw packet captures, trained models, private hardware identifiers, or personal experiment data.
 
-## System overview
+## System
 
 ![Hardware topology and B-main sensing link](docs/images/hardware_topology_bmain.png)
 
 The hardware setup uses one access point, three RT-AX52 bridge-style stations, and three backend devices. The Ubuntu machine also acts as the sniffer through an external monitor-mode Wi-Fi adapter. The final sensing setup focuses on the dominant B-main link and uses low-density beamforming feedback captured from ordinary communication traffic.
 
-## Example output
+## Example
 
 ![Inference timeline with 5 s majority voting](docs/images/prediction_timeline_5s.png)
 
@@ -36,9 +36,8 @@ project workflow:
 5. Train/evaluate the Keras CNN model, or run blind inference and plot the prediction timeline.
 
 
-## replace all placeholders with real values before launching
 
-Before running them, replace every placeholder with your local value:
+All placeholders should be replaced before running.
 
 ```text
 <PROJECT_ROOT>
