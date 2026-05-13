@@ -17,7 +17,7 @@ The project captures compressed beamforming feedback (CBF) / beamforming-feedbac
 
 This repository contains the processing scripts used in the project. It does not include raw packet captures, trained models, private hardware identifiers, or personal experiment data.
 
-![example](docs/images/illustration17_c.png)
+![example](docs/images/Illustration17_c.png)
 
 ## System
 
